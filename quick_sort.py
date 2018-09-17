@@ -7,7 +7,7 @@ QUICKSORT(A, p, r)
 3       QUICKSORT(A, p, q-1)
 3       QUICKSORT(A, q+1, r)
 
-PATTITION(A, p, r)
+PARTITION(A, p, r)
 1   x = A[r]
 2   i = p-1
 3   for j = p to r-1
@@ -19,7 +19,7 @@ PATTITION(A, p, r)
 """
 
 
-def quicksort(A, p=None, r=None):
+def quickSort(A, p=None, r=None):
     p = 0 if p is None else p
     r = len(A) - 1  if r is None else r
     if p < r:
